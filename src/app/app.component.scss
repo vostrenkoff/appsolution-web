@@ -268,6 +268,33 @@
 
   object-fit: contain;
 }
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* по умолчанию — десктоп */
+.logo-desktop {
+  height: 42px;
+  width: auto;
+}
+
+.logo-mobile {
+  display: none;
+  height: 36px;
+  width: auto;
+}
+
+/* 📱 телефон */
+@media (max-width: 768px) {
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+}
 
 
 /* ===== PAGE ===== */
